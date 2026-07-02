@@ -1,109 +1,24 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>布里斯湾 · 品牌全案策略方案</title><style>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>布里斯湾 · 品牌全案策略方案</title>
+<style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#1a0f08;color:#ede4d3;font-family:'Noto Sans SC',sans-serif;padding:20px}
-h1{font-family:'Noto Serif SC',serif;font-size:22px;text-align:center;margin-bottom:4px}
+body{background:#1a0f08;color:#ede4d3;font-family:sans-serif;padding:20px}
+h1{font-size:22px;text-align:center;margin-bottom:4px}
 .sub{text-align:center;color:#c9a87c;font-size:11px;margin-bottom:10px}
-.nav{text-align:center;margin-bottom:18px;display:flex;flex-wrap:wrap;justify-content:center;gap:3px}
+.nav{text-align:center;margin-bottom:18px;display:flex;flex-wrap:wrap;justify-content:center;gap:3px;position:sticky;top:10px;z-index:100;background:#1a0f08;padding:8px}
 .nav a{padding:4px 7px;background:#3d2a1c;color:#c9a87c;text-decoration:none;border-radius:3px;font-size:9px}
 .nav a:hover{background:#c9a87c;color:#2a1810}
-.slides{display:flex;flex-direction:column;gap:14px;max-width:960px;margin:0 auto}
+.slides{display:flex;flex-direction:column;gap:16px;max-width:960px;margin:0 auto}
 .sw{background:#2a1810;border-radius:6px;overflow:hidden}
 .sw h3{font-size:10px;padding:8px 14px;background:#3d2a1c;color:#c9a87c;letter-spacing:1px;display:flex;justify-content:space-between}
 .sw iframe{width:100%;height:540px;border:none;display:block}
-</style></head><body>
+</style></head>
+<body>
 <h1>布里斯湾 · 品牌全案策略方案</h1>
-<p class="sub">86 页 · 真实店铺照片 · 暖色出版物风格</p>
-<div class="nav" id="nav"></div><div class="slides" id="c"></div>
-<script>const S=[
-  {file:'02_background.html', num:'2', title:'布里斯湾风物商店'},
-  {file:'04_pestel.html', num:'4', title:'PESTEL 分析'},
-  {file:'05_niche.html', num:'5', title:'四步漏斗：找到生态位'},
-  {file:'06_competitors.html', num:'6', title:'10家竞品全景矩阵'},
-  {file:'07_benchmarks.html', num:'7', title:'三个关键参照'},
-  {file:'08_users.html', num:'8', title:'两类核心用户'},
-  {file:'09_journey.html', num:'9', title:'从"路过"到"复购"的五个阶段'},
-  {file:'10_swot.html', num:'10', title:'交叉分析'},
-  {file:'12_positioning.html', num:'12', title:'情感价值型定位'},
-  {file:'13_mission.html', num:'13', title:'Why We Exist'},
-  {file:'14_vision.html', num:'14', title:'Where We're Going'},
-  {file:'15_values.html', num:'15', title:'What We Believe'},
-  {file:'16_personality.html', num:'16', title:'照顾者 × 智者'},
-  {file:'17_story.html', num:'17', title:'初心 → 态度 → 承诺'},
-  {file:'18_naming_tagline.html', num:'18', title:'布里斯湾 · 6维评估'},
-  {file:'19_visual.html', num:'19', title:'暖色调 · 原木 · 白浅色'},
-  {file:'21_product.html', num:'21', title:'模块化孵化路线图'},
-  {file:'22_pricing.html', num:'22', title:'分装低门槛 × 试用→复购'},
-  {file:'23_channels.html', num:'23', title:'线下首购 · 私域复购 · 小红书拉新'},
-  {file:'24_founder_ip.html', num:'24', title:'品牌和创始人IP都需要发光'},
-  {file:'25_content.html', num:'25', title:'6层信任螺旋'},
-  {file:'26_community.html', num:'26', title:'2万人社群 × 私域复购'},
-  {file:'27_curation.html', num:'27', title:'月度快闪 × 四轮驱动'},
-  {file:'28_plan.html', num:'28', title:'Year 1 · 季度里程碑'},
-  {file:'29_metrics.html', num:'29', title:'北极星指标'},
-  {file:'30_risk_ending.html', num:'30', title:'五大风险 · 半年三件事'},
-  {file:'p1_01_scope.html', num:'31', title:'四个维度的市场扫描'},
-  {file:'p1_02_pestel_detail.html', num:'32', title:'政治 × 经济：政策利好与消费理性的双面窗口'},
-  {file:'p1_03_niche_detail.html', num:'33', title:'四步漏斗展开：每个判断的依据'},
-  {file:'p1_04_competitor_tiers.html', num:'34', title:'三个梯队：国际标杆 / 国内同行 / 本地玩家'},
-  {file:'p1_05_price_bands.html', num:'35', title:'竞品价格带与目标用户对比'},
-  {file:'p1_06_dd_detail.html', num:'36', title:'D&DEPARTMENT：风物策展的方法论源头'},
-  {file:'p1_07_userA_detail.html', num:'37', title:'在地文化探索者：为"发现"买单的人'},
-  {file:'p1_08_userB_detail.html', num:'38', title:'自我疗愈型消费者：为"慢下来"买单的人'},
-  {file:'p1_09_journey_aware.html', num:'39', title:'认知阶段：用户是怎么知道布里斯湾的？'},
-  {file:'p1_10_swot_internal.html', num:'40', title:'优势与劣势：布里斯湾的能力边界'},
-  {file:'p1_11_summary.html', num:'41', title:'市场调研核心发现：布里斯湾做对了什么'},
-  {file:'p2_01_positioning_compare.html', num:'42', title:'四种定位方法的适用条件与风险'},
-  {file:'p2_02_value_canvas.html', num:'43', title:'品牌价值画布：从生态位到价值主张'},
-  {file:'p2_03_mission_layers.html', num:'44', title:'使命的三层含义：反对什么 / 相信什么 / 为什么非做不可'},
-  {file:'p2_04_vision_detail.html', num:'45', title:'1-3年 / 3-5年 / 5-10年：品牌成长的三个阶段'},
-  {file:'p2_05_values_detail.html', num:'46', title:'三条价值观的"取舍时刻"检验'},
-  {file:'p2_06_archetypes.html', num:'47', title:'12品牌原型轮盘：布里斯湾的定位'},
-  {file:'p2_07_story_detail.html', num:'48', title:'品牌故事三段式的创作逻辑'},
-  {file:'p2_08_naming_diagnosis.html', num:'49', title:'布里斯湾的深度诊断：优势与劣势'},
-  {file:'p2_09_tagline_detail.html', num:'50', title:'定位语与广告语的创作方法论'},
-  {file:'p2_10_colors.html', num:'51', title:'品牌色彩：从店铺实景提取的暖色系统'},
-  {file:'p2_11_visual_keywords.html', num:'52', title:'视觉风格关键词与否定清单'},
-  {file:'p2_12_consistency.html', num:'53', title:'战略定位总结：推导链与交叉验证'},
-  {file:'p3_01_selection.html', num:'54', title:'选品标准三原则与品类角色矩阵'},
-  {file:'p3_02_incubation.html', num:'55', title:'模块化孵化：从布里斯湾到独立店型的路径'},
-  {file:'p3_03_pricing_detail.html', num:'56', title:'分装策略的底层逻辑：降低尝鲜门槛'},
-  {file:'p3_04_channel_priority.html', num:'57', title:'全渠道布局的优先级与资源分配'},
-  {file:'p3_05_ip_launch.html', num:'58', title:'创始人IP冷启动路径：90天行动计划'},
-  {file:'p3_06_trust_spiral.html', num:'59', title:'6层信任螺旋：从"知道"到"归属"的内容路径'},
-  {file:'p3_07_community_phases.html', num:'60', title:'100→10000两阶段增长模型'},
-  {file:'p3_08_popup_ops.html', num:'61', title:'月度快闪区的运营SOP'},
-  {file:'p3_09_budget.html', num:'62', title:'年度预算分配建议'},
-  {file:'p3_10_team_gaps.html', num:'63', title:'现有团队结构与能力缺口'},
-  {file:'p3_11_metrics_phases.html', num:'64', title:'三阶段指标看板：冷启动→增长→成熟'},
-  {file:'p3_12_risk_matrix.html', num:'65', title:'五大风险的概率×影响矩阵与应对方案'},
-  {file:'p3_13_checklist.html', num:'66', title:'创始人30/60/90天行动计划'},
-  {file:'p3_14_reading.html', num:'67', title:'持续学习：品牌策略推荐书单'},
-  {file:'e01_philosophy.html', num:'68', title:'"世界越快，我越慢"的深层含义'},
-  {file:'e02_niaoniao.html', num:'69', title:'店中店的独立品牌之路'},
-  {file:'e03_sake.html', num:'70', title:'JETRO清酒月验证的第二个增长引擎'},
-  {file:'e04_soap.html', num:'71', title:'冷制皂：一个被低估的复购品类'},
-  {file:'e05_antique.html', num:'72', title:'低频高客单的"淘"之乐趣'},
-  {file:'e06_plum_season.html', num:'73', title:'梅子季：一个策展如何创造需求'},
-  {file:'e07_city_guide.html', num:'74', title:'一本纸质指南的品牌价值'},
-  {file:'e08_028c.html', num:'75', title:'内容引擎 × 商业载体的协同结构'},
-  {file:'m04_strategic_groups.html', num:'76', title:'竞品战略群组：两个关键维度的定位地图'},
-  {file:'m07_userCD.html', num:'77', title:'补充画像：礼品购买者 + 手作爱好者'},
-  {file:'m08_journey_buy.html', num:'78', title:'购买→复购→推荐：用户怎么变成传播者'},
-  {file:'m08_emotion_curve.html', num:'79', title:'用户旅程的情绪曲线：最高点和最低点'},
-  {file:'m09_tows.html', num:'80', title:'SWOT交叉策略：把劣势变优势的路径'},
-  {file:'m10_niche_confirm.html', num:'81', title:'市场调研最终结论：布里斯湾的生态位成立'},
-  {file:'m11_mission_cases.html', num:'82', title:'使命验证：三个对标案例的对照分析'},
-  {file:'m16_naming_compare.html', num:'83', title:'竞品命名策略对比分析'},
-  {file:'m18_logo.html', num:'84', title:'刺鲀：布里斯湾的"原住民"'},
-  {file:'m21_mvp.html', num:'85', title:'产品矩阵的MVP阶段：先打透一个品类'},
-  {file:'m23_channel_priority.html', num:'86', title:'渠道优先级与资源分配的决策矩阵'},
-  {file:'m28_gantt.html', num:'87', title:'Year 1 四轮驱动启动顺序与时间线'},
-  {file:'m30_north_star.html', num:'88', title:'MARU：为什么月度活跃复购用户数是北极星'},
-  {file:'m31_hypotheses.html', num:'89', title:'7个关键假设与验证计划'},
-  {file:'m32_final_words.html', num:'90', title:'布里斯湾不是一个店，是一种选择'}
-];
-const n=document.getElementById('nav'),c=document.getElementById('c');
-S.forEach(s=>{const a=document.createElement('a');a.href='#'+s.num;a.textContent=s.num;n.appendChild(a)});
-S.forEach(s=>{const w=document.createElement('div');w.className='sw';w.id=s.num;w.innerHTML='<h3><span>'+s.num+'</span><span>'+s.title+'</span></h3>';const f=document.createElement('iframe');f.src='slides/'+s.file;f.loading='lazy';w.appendChild(f);c.appendChild(w)});
-</script></body></html>
+<p class="sub">90 页 · 真实店铺照片 · 暖色出版物风格</p>
+<div class="nav"><a href="#p0">0</a><a href="#p0">0</a><a href="#p0">0</a><a href="#p0">0</a><a href="#p2">2</a><a href="#p4">4</a><a href="#p5">5</a><a href="#p6">6</a><a href="#p7">7</a><a href="#p8">8</a><a href="#p9">9</a><a href="#p10">10</a><a href="#p12">12</a><a href="#p13">13</a><a href="#p14">14</a><a href="#p15">15</a><a href="#p16">16</a><a href="#p17">17</a><a href="#p18">18</a><a href="#p19">19</a><a href="#p21">21</a><a href="#p22">22</a><a href="#p23">23</a><a href="#p24">24</a><a href="#p25">25</a><a href="#p26">26</a><a href="#p27">27</a><a href="#p28">28</a><a href="#p29">29</a><a href="#p30">30</a><a href="#p31">31</a><a href="#p32">32</a><a href="#p33">33</a><a href="#p34">34</a><a href="#p35">35</a><a href="#p36">36</a><a href="#p37">37</a><a href="#p38">38</a><a href="#p39">39</a><a href="#p40">40</a><a href="#p41">41</a><a href="#p42">42</a><a href="#p43">43</a><a href="#p44">44</a><a href="#p45">45</a><a href="#p46">46</a><a href="#p47">47</a><a href="#p48">48</a><a href="#p49">49</a><a href="#p50">50</a><a href="#p51">51</a><a href="#p52">52</a><a href="#p53">53</a><a href="#p54">54</a><a href="#p55">55</a><a href="#p56">56</a><a href="#p57">57</a><a href="#p58">58</a><a href="#p59">59</a><a href="#p60">60</a><a href="#p61">61</a><a href="#p62">62</a><a href="#p63">63</a><a href="#p64">64</a><a href="#p65">65</a><a href="#p66">66</a><a href="#p67">67</a><a href="#p68">68</a><a href="#p69">69</a><a href="#p70">70</a><a href="#p71">71</a><a href="#p72">72</a><a href="#p73">73</a><a href="#p74">74</a><a href="#p75">75</a><a href="#p76">76</a><a href="#p77">77</a><a href="#p78">78</a><a href="#p79">79</a><a href="#p80">80</a><a href="#p81">81</a><a href="#p82">82</a><a href="#p83">83</a><a href="#p84">84</a><a href="#p85">85</a><a href="#p86">86</a><a href="#p87">87</a><a href="#p88">88</a><a href="#p89">89</a><a href="#p90">90</a></div>
+<div class="slides"><div class="sw" id="p0"><h3><span>0</span><span>布里斯湾</span></h3><iframe src="./slides/01_cover.html" loading="lazy"></iframe></div><div class="sw" id="p0"><h3><span>0</span><span>发现价值</span></h3><iframe src="./slides/03_chapter1.html" loading="lazy"></iframe></div><div class="sw" id="p0"><h3><span>0</span><span>创造价值</span></h3><iframe src="./slides/11_chapter2.html" loading="lazy"></iframe></div><div class="sw" id="p0"><h3><span>0</span><span>传播价值</span></h3><iframe src="./slides/20_chapter3.html" loading="lazy"></iframe></div><div class="sw" id="p2"><h3><span>2</span><span>布里斯湾风物商店</span></h3><iframe src="./slides/02_background.html" loading="lazy"></iframe></div><div class="sw" id="p4"><h3><span>4</span><span>PESTEL 分析</span></h3><iframe src="./slides/04_pestel.html" loading="lazy"></iframe></div><div class="sw" id="p5"><h3><span>5</span><span>四步漏斗：找到生态位</span></h3><iframe src="./slides/05_niche.html" loading="lazy"></iframe></div><div class="sw" id="p6"><h3><span>6</span><span>10家竞品全景矩阵</span></h3><iframe src="./slides/06_competitors.html" loading="lazy"></iframe></div><div class="sw" id="p7"><h3><span>7</span><span>三个关键参照</span></h3><iframe src="./slides/07_benchmarks.html" loading="lazy"></iframe></div><div class="sw" id="p8"><h3><span>8</span><span>两类核心用户</span></h3><iframe src="./slides/08_users.html" loading="lazy"></iframe></div><div class="sw" id="p9"><h3><span>9</span><span>从"路过"到"复购"的五个阶段</span></h3><iframe src="./slides/09_journey.html" loading="lazy"></iframe></div><div class="sw" id="p10"><h3><span>10</span><span>交叉分析</span></h3><iframe src="./slides/10_swot.html" loading="lazy"></iframe></div><div class="sw" id="p12"><h3><span>12</span><span>情感价值型定位</span></h3><iframe src="./slides/12_positioning.html" loading="lazy"></iframe></div><div class="sw" id="p13"><h3><span>13</span><span>Why We Exist</span></h3><iframe src="./slides/13_mission.html" loading="lazy"></iframe></div><div class="sw" id="p14"><h3><span>14</span><span>Where We're Going</span></h3><iframe src="./slides/14_vision.html" loading="lazy"></iframe></div><div class="sw" id="p15"><h3><span>15</span><span>What We Believe</span></h3><iframe src="./slides/15_values.html" loading="lazy"></iframe></div><div class="sw" id="p16"><h3><span>16</span><span>照顾者 × 智者</span></h3><iframe src="./slides/16_personality.html" loading="lazy"></iframe></div><div class="sw" id="p17"><h3><span>17</span><span>初心 → 态度 → 承诺</span></h3><iframe src="./slides/17_story.html" loading="lazy"></iframe></div><div class="sw" id="p18"><h3><span>18</span><span>布里斯湾 · 6维评估</span></h3><iframe src="./slides/18_naming_tagline.html" loading="lazy"></iframe></div><div class="sw" id="p19"><h3><span>19</span><span>暖色调 · 原木 · 白浅色</span></h3><iframe src="./slides/19_visual.html" loading="lazy"></iframe></div><div class="sw" id="p21"><h3><span>21</span><span>模块化孵化路线图</span></h3><iframe src="./slides/21_product.html" loading="lazy"></iframe></div><div class="sw" id="p22"><h3><span>22</span><span>分装低门槛 × 试用→复购</span></h3><iframe src="./slides/22_pricing.html" loading="lazy"></iframe></div><div class="sw" id="p23"><h3><span>23</span><span>线下首购 · 私域复购 · 小红书拉新</span></h3><iframe src="./slides/23_channels.html" loading="lazy"></iframe></div><div class="sw" id="p24"><h3><span>24</span><span>品牌和创始人IP都需要发光</span></h3><iframe src="./slides/24_founder_ip.html" loading="lazy"></iframe></div><div class="sw" id="p25"><h3><span>25</span><span>6层信任螺旋</span></h3><iframe src="./slides/25_content.html" loading="lazy"></iframe></div><div class="sw" id="p26"><h3><span>26</span><span>2万人社群 × 私域复购</span></h3><iframe src="./slides/26_community.html" loading="lazy"></iframe></div><div class="sw" id="p27"><h3><span>27</span><span>月度快闪 × 四轮驱动</span></h3><iframe src="./slides/27_curation.html" loading="lazy"></iframe></div><div class="sw" id="p28"><h3><span>28</span><span>Year 1 · 季度里程碑</span></h3><iframe src="./slides/28_plan.html" loading="lazy"></iframe></div><div class="sw" id="p29"><h3><span>29</span><span>北极星指标</span></h3><iframe src="./slides/29_metrics.html" loading="lazy"></iframe></div><div class="sw" id="p30"><h3><span>30</span><span>五大风险 · 半年三件事</span></h3><iframe src="./slides/30_risk_ending.html" loading="lazy"></iframe></div><div class="sw" id="p31"><h3><span>31</span><span>四个维度的市场扫描</span></h3><iframe src="./slides/p1_01_scope.html" loading="lazy"></iframe></div><div class="sw" id="p32"><h3><span>32</span><span>政治 × 经济：政策利好与消费理性的双面窗口</span></h3><iframe src="./slides/p1_02_pestel_detail.html" loading="lazy"></iframe></div><div class="sw" id="p33"><h3><span>33</span><span>四步漏斗展开：每个判断的依据</span></h3><iframe src="./slides/p1_03_niche_detail.html" loading="lazy"></iframe></div><div class="sw" id="p34"><h3><span>34</span><span>三个梯队：国际标杆 / 国内同行 / 本地玩家</span></h3><iframe src="./slides/p1_04_competitor_tiers.html" loading="lazy"></iframe></div><div class="sw" id="p35"><h3><span>35</span><span>竞品价格带与目标用户对比</span></h3><iframe src="./slides/p1_05_price_bands.html" loading="lazy"></iframe></div><div class="sw" id="p36"><h3><span>36</span><span>D&DEPARTMENT：风物策展的方法论源头</span></h3><iframe src="./slides/p1_06_dd_detail.html" loading="lazy"></iframe></div><div class="sw" id="p37"><h3><span>37</span><span>在地文化探索者：为"发现"买单的人</span></h3><iframe src="./slides/p1_07_userA_detail.html" loading="lazy"></iframe></div><div class="sw" id="p38"><h3><span>38</span><span>自我疗愈型消费者：为"慢下来"买单的人</span></h3><iframe src="./slides/p1_08_userB_detail.html" loading="lazy"></iframe></div><div class="sw" id="p39"><h3><span>39</span><span>认知阶段：用户是怎么知道布里斯湾的？</span></h3><iframe src="./slides/p1_09_journey_aware.html" loading="lazy"></iframe></div><div class="sw" id="p40"><h3><span>40</span><span>优势与劣势：布里斯湾的能力边界</span></h3><iframe src="./slides/p1_10_swot_internal.html" loading="lazy"></iframe></div><div class="sw" id="p41"><h3><span>41</span><span>市场调研核心发现：布里斯湾做对了什么</span></h3><iframe src="./slides/p1_11_summary.html" loading="lazy"></iframe></div><div class="sw" id="p42"><h3><span>42</span><span>四种定位方法的适用条件与风险</span></h3><iframe src="./slides/p2_01_positioning_compare.html" loading="lazy"></iframe></div><div class="sw" id="p43"><h3><span>43</span><span>品牌价值画布：从生态位到价值主张</span></h3><iframe src="./slides/p2_02_value_canvas.html" loading="lazy"></iframe></div><div class="sw" id="p44"><h3><span>44</span><span>使命的三层含义：反对什么 / 相信什么 / 为什么非做不可</span></h3><iframe src="./slides/p2_03_mission_layers.html" loading="lazy"></iframe></div><div class="sw" id="p45"><h3><span>45</span><span>1-3年 / 3-5年 / 5-10年：品牌成长的三个阶段</span></h3><iframe src="./slides/p2_04_vision_detail.html" loading="lazy"></iframe></div><div class="sw" id="p46"><h3><span>46</span><span>三条价值观的"取舍时刻"检验</span></h3><iframe src="./slides/p2_05_values_detail.html" loading="lazy"></iframe></div><div class="sw" id="p47"><h3><span>47</span><span>12品牌原型轮盘：布里斯湾的定位</span></h3><iframe src="./slides/p2_06_archetypes.html" loading="lazy"></iframe></div><div class="sw" id="p48"><h3><span>48</span><span>品牌故事三段式的创作逻辑</span></h3><iframe src="./slides/p2_07_story_detail.html" loading="lazy"></iframe></div><div class="sw" id="p49"><h3><span>49</span><span>布里斯湾的深度诊断：优势与劣势</span></h3><iframe src="./slides/p2_08_naming_diagnosis.html" loading="lazy"></iframe></div><div class="sw" id="p50"><h3><span>50</span><span>定位语与广告语的创作方法论</span></h3><iframe src="./slides/p2_09_tagline_detail.html" loading="lazy"></iframe></div><div class="sw" id="p51"><h3><span>51</span><span>品牌色彩：从店铺实景提取的暖色系统</span></h3><iframe src="./slides/p2_10_colors.html" loading="lazy"></iframe></div><div class="sw" id="p52"><h3><span>52</span><span>视觉风格关键词与否定清单</span></h3><iframe src="./slides/p2_11_visual_keywords.html" loading="lazy"></iframe></div><div class="sw" id="p53"><h3><span>53</span><span>战略定位总结：推导链与交叉验证</span></h3><iframe src="./slides/p2_12_consistency.html" loading="lazy"></iframe></div><div class="sw" id="p54"><h3><span>54</span><span>选品标准三原则与品类角色矩阵</span></h3><iframe src="./slides/p3_01_selection.html" loading="lazy"></iframe></div><div class="sw" id="p55"><h3><span>55</span><span>模块化孵化：从布里斯湾到独立店型的路径</span></h3><iframe src="./slides/p3_02_incubation.html" loading="lazy"></iframe></div><div class="sw" id="p56"><h3><span>56</span><span>分装策略的底层逻辑：降低尝鲜门槛</span></h3><iframe src="./slides/p3_03_pricing_detail.html" loading="lazy"></iframe></div><div class="sw" id="p57"><h3><span>57</span><span>全渠道布局的优先级与资源分配</span></h3><iframe src="./slides/p3_04_channel_priority.html" loading="lazy"></iframe></div><div class="sw" id="p58"><h3><span>58</span><span>创始人IP冷启动路径：90天行动计划</span></h3><iframe src="./slides/p3_05_ip_launch.html" loading="lazy"></iframe></div><div class="sw" id="p59"><h3><span>59</span><span>6层信任螺旋：从"知道"到"归属"的内容路径</span></h3><iframe src="./slides/p3_06_trust_spiral.html" loading="lazy"></iframe></div><div class="sw" id="p60"><h3><span>60</span><span>100→10000两阶段增长模型</span></h3><iframe src="./slides/p3_07_community_phases.html" loading="lazy"></iframe></div><div class="sw" id="p61"><h3><span>61</span><span>月度快闪区的运营SOP</span></h3><iframe src="./slides/p3_08_popup_ops.html" loading="lazy"></iframe></div><div class="sw" id="p62"><h3><span>62</span><span>年度预算分配建议</span></h3><iframe src="./slides/p3_09_budget.html" loading="lazy"></iframe></div><div class="sw" id="p63"><h3><span>63</span><span>现有团队结构与能力缺口</span></h3><iframe src="./slides/p3_10_team_gaps.html" loading="lazy"></iframe></div><div class="sw" id="p64"><h3><span>64</span><span>三阶段指标看板：冷启动→增长→成熟</span></h3><iframe src="./slides/p3_11_metrics_phases.html" loading="lazy"></iframe></div><div class="sw" id="p65"><h3><span>65</span><span>五大风险的概率×影响矩阵与应对方案</span></h3><iframe src="./slides/p3_12_risk_matrix.html" loading="lazy"></iframe></div><div class="sw" id="p66"><h3><span>66</span><span>创始人30/60/90天行动计划</span></h3><iframe src="./slides/p3_13_checklist.html" loading="lazy"></iframe></div><div class="sw" id="p67"><h3><span>67</span><span>持续学习：品牌策略推荐书单</span></h3><iframe src="./slides/p3_14_reading.html" loading="lazy"></iframe></div><div class="sw" id="p68"><h3><span>68</span><span>"世界越快，我越慢"的深层含义</span></h3><iframe src="./slides/e01_philosophy.html" loading="lazy"></iframe></div><div class="sw" id="p69"><h3><span>69</span><span>店中店的独立品牌之路</span></h3><iframe src="./slides/e02_niaoniao.html" loading="lazy"></iframe></div><div class="sw" id="p70"><h3><span>70</span><span>JETRO清酒月验证的第二个增长引擎</span></h3><iframe src="./slides/e03_sake.html" loading="lazy"></iframe></div><div class="sw" id="p71"><h3><span>71</span><span>冷制皂：一个被低估的复购品类</span></h3><iframe src="./slides/e04_soap.html" loading="lazy"></iframe></div><div class="sw" id="p72"><h3><span>72</span><span>低频高客单的"淘"之乐趣</span></h3><iframe src="./slides/e05_antique.html" loading="lazy"></iframe></div><div class="sw" id="p73"><h3><span>73</span><span>梅子季：一个策展如何创造需求</span></h3><iframe src="./slides/e06_plum_season.html" loading="lazy"></iframe></div><div class="sw" id="p74"><h3><span>74</span><span>一本纸质指南的品牌价值</span></h3><iframe src="./slides/e07_city_guide.html" loading="lazy"></iframe></div><div class="sw" id="p75"><h3><span>75</span><span>内容引擎 × 商业载体的协同结构</span></h3><iframe src="./slides/e08_028c.html" loading="lazy"></iframe></div><div class="sw" id="p76"><h3><span>76</span><span>竞品战略群组：两个关键维度的定位地图</span></h3><iframe src="./slides/m04_strategic_groups.html" loading="lazy"></iframe></div><div class="sw" id="p77"><h3><span>77</span><span>补充画像：礼品购买者 + 手作爱好者</span></h3><iframe src="./slides/m07_userCD.html" loading="lazy"></iframe></div><div class="sw" id="p78"><h3><span>78</span><span>购买→复购→推荐：用户怎么变成传播者</span></h3><iframe src="./slides/m08_journey_buy.html" loading="lazy"></iframe></div><div class="sw" id="p79"><h3><span>79</span><span>用户旅程的情绪曲线：最高点和最低点</span></h3><iframe src="./slides/m08_emotion_curve.html" loading="lazy"></iframe></div><div class="sw" id="p80"><h3><span>80</span><span>SWOT交叉策略：把劣势变优势的路径</span></h3><iframe src="./slides/m09_tows.html" loading="lazy"></iframe></div><div class="sw" id="p81"><h3><span>81</span><span>市场调研最终结论：布里斯湾的生态位成立</span></h3><iframe src="./slides/m10_niche_confirm.html" loading="lazy"></iframe></div><div class="sw" id="p82"><h3><span>82</span><span>使命验证：三个对标案例的对照分析</span></h3><iframe src="./slides/m11_mission_cases.html" loading="lazy"></iframe></div><div class="sw" id="p83"><h3><span>83</span><span>竞品命名策略对比分析</span></h3><iframe src="./slides/m16_naming_compare.html" loading="lazy"></iframe></div><div class="sw" id="p84"><h3><span>84</span><span>刺鲀：布里斯湾的"原住民"</span></h3><iframe src="./slides/m18_logo.html" loading="lazy"></iframe></div><div class="sw" id="p85"><h3><span>85</span><span>产品矩阵的MVP阶段：先打透一个品类</span></h3><iframe src="./slides/m21_mvp.html" loading="lazy"></iframe></div><div class="sw" id="p86"><h3><span>86</span><span>渠道优先级与资源分配的决策矩阵</span></h3><iframe src="./slides/m23_channel_priority.html" loading="lazy"></iframe></div><div class="sw" id="p87"><h3><span>87</span><span>Year 1 四轮驱动启动顺序与时间线</span></h3><iframe src="./slides/m28_gantt.html" loading="lazy"></iframe></div><div class="sw" id="p88"><h3><span>88</span><span>MARU：为什么月度活跃复购用户数是北极星</span></h3><iframe src="./slides/m30_north_star.html" loading="lazy"></iframe></div><div class="sw" id="p89"><h3><span>89</span><span>7个关键假设与验证计划</span></h3><iframe src="./slides/m31_hypotheses.html" loading="lazy"></iframe></div><div class="sw" id="p90"><h3><span>90</span><span>布里斯湾不是一个店，是一种选择</span></h3><iframe src="./slides/m32_final_words.html" loading="lazy"></iframe></div></div>
+</body></html>
