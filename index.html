@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>布里斯湾 · 品牌全案策略方案</title><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#1a0f08;color:#ede4d3;font-family:'Noto Sans SC',sans-serif;padding:20px}
+h1{font-family:'Noto Serif SC',serif;font-size:22px;text-align:center;margin-bottom:4px}
+.sub{text-align:center;color:#c9a87c;font-size:11px;margin-bottom:10px}
+.nav{text-align:center;margin-bottom:18px;display:flex;flex-wrap:wrap;justify-content:center;gap:3px}
+.nav a{padding:4px 7px;background:#3d2a1c;color:#c9a87c;text-decoration:none;border-radius:3px;font-size:9px}
+.nav a:hover{background:#c9a87c;color:#2a1810}
+.slides{display:flex;flex-direction:column;gap:14px;max-width:960px;margin:0 auto}
+.sw{background:#2a1810;border-radius:6px;overflow:hidden}
+.sw h3{font-size:10px;padding:8px 14px;background:#3d2a1c;color:#c9a87c;letter-spacing:1px;display:flex;justify-content:space-between}
+.sw iframe{width:100%;height:540px;border:none;display:block}
+</style></head><body>
+<h1>布里斯湾 · 品牌全案策略方案</h1>
+<p class="sub">90 页 · 真实店铺照片 · 暖色出版物风格</p>
+<div class="nav" id="nav"></div><div class="slides" id="c"></div>
+<script>const S=[
+  {file:'01_cover.html', num:'01', title:'01 cover'},
+  {file:'02_background.html', num:'02', title:'02 background'},
+  {file:'03_chapter1.html', num:'03', title:'03 chapter1'},
+  {file:'04_pestel.html', num:'04', title:'04 pestel'},
+  {file:'05_niche.html', num:'05', title:'05 niche'},
+  {file:'06_competitors.html', num:'06', title:'06 competitors'},
+  {file:'07_benchmarks.html', num:'07', title:'07 benchmarks'},
+  {file:'08_users.html', num:'08', title:'08 users'},
+  {file:'09_journey.html', num:'09', title:'09 journey'},
+  {file:'10_swot.html', num:'10', title:'10 swot'},
+  {file:'11_chapter2.html', num:'11', title:'11 chapter2'},
+  {file:'12_positioning.html', num:'12', title:'12 positioning'},
+  {file:'13_mission.html', num:'13', title:'13 mission'},
+  {file:'14_vision.html', num:'14', title:'14 vision'},
+  {file:'15_values.html', num:'15', title:'15 values'},
+  {file:'16_personality.html', num:'16', title:'16 personality'},
+  {file:'17_story.html', num:'17', title:'17 story'},
+  {file:'18_naming_tagline.html', num:'18', title:'18 naming tagline'},
+  {file:'19_visual.html', num:'19', title:'19 visual'},
+  {file:'20_chapter3.html', num:'20', title:'20 chapter3'},
+  {file:'21_product.html', num:'21', title:'21 product'},
+  {file:'22_pricing.html', num:'22', title:'22 pricing'},
+  {file:'23_channels.html', num:'23', title:'23 channels'},
+  {file:'24_founder_ip.html', num:'24', title:'24 founder ip'},
+  {file:'25_content.html', num:'25', title:'25 content'},
+  {file:'26_community.html', num:'26', title:'26 community'},
+  {file:'27_curation.html', num:'27', title:'27 curation'},
+  {file:'28_plan.html', num:'28', title:'28 plan'},
+  {file:'29_metrics.html', num:'29', title:'29 metrics'},
+  {file:'30_risk_ending.html', num:'30', title:'30 risk ending'},
+  {file:'p1_01_scope.html', num:'p1', title:'P1·01 scope'},
+  {file:'p1_02_pestel_detail.html', num:'p1', title:'P1·02 pestel detail'},
+  {file:'p1_03_niche_detail.html', num:'p1', title:'P1·03 niche detail'},
+  {file:'p1_04_competitor_tiers.html', num:'p1', title:'P1·04 competitor tiers'},
+  {file:'p1_05_price_bands.html', num:'p1', title:'P1·05 price bands'},
+  {file:'p1_06_dd_detail.html', num:'p1', title:'P1·06 dd detail'},
+  {file:'p1_07_userA_detail.html', num:'p1', title:'P1·07 userA detail'},
+  {file:'p1_08_userB_detail.html', num:'p1', title:'P1·08 userB detail'},
+  {file:'p1_09_journey_aware.html', num:'p1', title:'P1·09 journey aware'},
+  {file:'p1_10_swot_internal.html', num:'p1', title:'P1·10 swot internal'},
+  {file:'p1_11_summary.html', num:'p1', title:'P1·11 summary'},
+  {file:'p2_01_positioning_compare.html', num:'p2', title:'P2·01 positioning compare'},
+  {file:'p2_02_value_canvas.html', num:'p2', title:'P2·02 value canvas'},
+  {file:'p2_03_mission_layers.html', num:'p2', title:'P2·03 mission layers'},
+  {file:'p2_04_vision_detail.html', num:'p2', title:'P2·04 vision detail'},
+  {file:'p2_05_values_detail.html', num:'p2', title:'P2·05 values detail'},
+  {file:'p2_06_archetypes.html', num:'p2', title:'P2·06 archetypes'},
+  {file:'p2_07_story_detail.html', num:'p2', title:'P2·07 story detail'},
+  {file:'p2_08_naming_diagnosis.html', num:'p2', title:'P2·08 naming diagnosis'},
+  {file:'p2_09_tagline_detail.html', num:'p2', title:'P2·09 tagline detail'},
+  {file:'p2_10_colors.html', num:'p2', title:'P2·10 colors'},
+  {file:'p2_11_visual_keywords.html', num:'p2', title:'P2·11 visual keywords'},
+  {file:'p2_12_consistency.html', num:'p2', title:'P2·12 consistency'},
+  {file:'p3_01_selection.html', num:'p3', title:'P3·01 selection'},
+  {file:'p3_02_incubation.html', num:'p3', title:'P3·02 incubation'},
+  {file:'p3_03_pricing_detail.html', num:'p3', title:'P3·03 pricing detail'},
+  {file:'p3_04_channel_priority.html', num:'p3', title:'P3·04 channel priority'},
+  {file:'p3_05_ip_launch.html', num:'p3', title:'P3·05 ip launch'},
+  {file:'p3_06_trust_spiral.html', num:'p3', title:'P3·06 trust spiral'},
+  {file:'p3_07_community_phases.html', num:'p3', title:'P3·07 community phases'},
+  {file:'p3_08_popup_ops.html', num:'p3', title:'P3·08 popup ops'},
+  {file:'p3_09_budget.html', num:'p3', title:'P3·09 budget'},
+  {file:'p3_10_team_gaps.html', num:'p3', title:'P3·10 team gaps'},
+  {file:'p3_11_metrics_phases.html', num:'p3', title:'P3·11 metrics phases'},
+  {file:'p3_12_risk_matrix.html', num:'p3', title:'P3·12 risk matrix'},
+  {file:'p3_13_checklist.html', num:'p3', title:'P3·13 checklist'},
+  {file:'p3_14_reading.html', num:'p3', title:'P3·14 reading'},
+  {file:'e01_philosophy.html', num:'e01', title:'Ex·1 philosophy'},
+  {file:'e02_niaoniao.html', num:'e02', title:'Ex·2 niaoniao'},
+  {file:'e03_sake.html', num:'e03', title:'Ex·3 sake'},
+  {file:'e04_soap.html', num:'e04', title:'Ex·4 soap'},
+  {file:'e05_antique.html', num:'e05', title:'Ex·5 antique'},
+  {file:'e06_plum_season.html', num:'e06', title:'Ex·6 plum season'},
+  {file:'e07_city_guide.html', num:'e07', title:'Ex·7 city guide'},
+  {file:'e08_028c.html', num:'e08', title:'Ex·8 028c'},
+  {file:'m04_strategic_groups.html', num:'m04', title:'M·4 strategic groups'},
+  {file:'m07_userCD.html', num:'m07', title:'M·7 userCD'},
+  {file:'m08_emotion_curve.html', num:'m08', title:'M·8 emotion curve'},
+  {file:'m08_journey_buy.html', num:'m08', title:'M·8 journey buy'},
+  {file:'m09_tows.html', num:'m09', title:'M·9 tows'},
+  {file:'m10_niche_confirm.html', num:'m10', title:'M·0 niche confirm'},
+  {file:'m11_mission_cases.html', num:'m11', title:'M·1 mission cases'},
+  {file:'m16_naming_compare.html', num:'m16', title:'M·6 naming compare'},
+  {file:'m18_logo.html', num:'m18', title:'M·8 logo'},
+  {file:'m21_mvp.html', num:'m21', title:'M·1 mvp'},
+  {file:'m23_channel_priority.html', num:'m23', title:'M·3 channel priority'},
+  {file:'m28_gantt.html', num:'m28', title:'M·8 gantt'},
+  {file:'m30_north_star.html', num:'m30', title:'M·0 north star'},
+  {file:'m31_hypotheses.html', num:'m31', title:'M·1 hypotheses'},
+  {file:'m32_final_words.html', num:'m32', title:'M·2 final words'}
+];const n=document.getElementById('nav'),c=document.getElementById('c');
+S.forEach(s=>{const a=document.createElement('a');a.href='#'+s.num;a.textContent=s.num;n.appendChild(a)});
+S.forEach(s=>{const w=document.createElement('div');w.className='sw';w.id=s.num;w.innerHTML='<h3><span>'+s.num+'</span><span>'+s.title+'</span></h3>';const f=document.createElement('iframe');f.src='slides/'+s.file;f.loading='lazy';w.appendChild(f);c.appendChild(w)});</script>
+</body></html>
